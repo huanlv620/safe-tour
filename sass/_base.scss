@@ -1,0 +1,82 @@
+::before,
+::after,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 131px;
+    height: 48px;
+    border-radius: 8px;
+    background: #31c3e0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: inline-block;
+        color: #676a6c;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 114.286%;
+        padding: 5px 17px;
+
+        &:hover {
+            color: #2d3134;
+        }
+
+        &--active {
+            position: relative;
+            color: #2d3134;
+
+            &::after {
+                position: absolute;
+                left: 17px;
+                bottom: 0;
+                content: "";
+                width: 12px;
+                height: 2px;
+                border-radius: 1px;
+                background: #ff7b29;
+            }
+        }
+    }
+}
