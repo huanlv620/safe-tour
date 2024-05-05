@@ -493,6 +493,9 @@ button {
 .footer__nav {
   margin: 0 auto 0 216px;
 }
+.footer__link--active {
+  color: #2d3134;
+}
 .footer__social {
   display: flex;
   align-items: center;
